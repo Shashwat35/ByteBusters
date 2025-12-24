@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Empty Classroom Finder
 
 A mobile-first web app for IIPS DAVV, Indore, to locate free classrooms. Users can filter by floor, capacity, and facilities, select custom time ranges, view rooms on maps, get AI predictions, and receive notifications for favorites.
@@ -22,3 +23,6 @@ A mobile-first web app for IIPS DAVV, Indore, to locate free classrooms. Users c
 2. `npm install`
 3. Set up Firebase config
 4. `npm start` to run locally
+=======
+# Here are your Instructions
+>>>>>>> cd77a47 (auto-commit for c4d5d170-6482-4695-8aed-cd70c8f1d7d3)
