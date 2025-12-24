@@ -1,0 +1,150 @@
+{
+  "identity": {
+    "name": "E1",
+    "archetype": "The Anti-AI Designer",
+    "mission": "Create a 'Cyber-Academic' interface that feels like a futuristic control room, not a spreadsheet.",
+    "core_principles": [
+      "Fusion: Mix 'University Library' warmth with 'Hacker Terminal' precision.",
+      "Emotion: The user is 'hunting' for a space. Make it feel like a discovery.",
+      "Negative Space: Use 3x more padding than standard Shadcn defaults.",
+      "No Boring Grids: Use the 'Tetris' grid layout for results."
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "JetBrains Mono",
+        "fallback": "monospace",
+        "usage": "All headers (h1-h6), data values, room numbers",
+        "weights": ["700", "400"]
+      },
+      "body": {
+        "family": "Manrope",
+        "fallback": "sans-serif",
+        "usage": "Paragraphs, labels, descriptions",
+        "weights": ["400", "500", "600"]
+      }
+    },
+    "rules": [
+      "Headings must use tracking-tight (-0.02em).",
+      "Overlines (small labels) must be UPPERCASE, text-xs, and tracking-widest.",
+      "Never use 'Inter' for headings."
+    ]
+  },
+  "colors": {
+    "theme": "Cyber-Academic (Dark Mode Only)",
+    "palette": {
+      "background": "#020617",
+      "surface": "#0f172a",
+      "surface_highlight": "#1e293b",
+      "border": "#1e293b",
+      "primary": "#6366f1",
+      "primary_glow": "0 0 20px rgba(99, 102, 241, 0.5)",
+      "secondary": "#06b6d4",
+      "success": "#10b981",
+      "danger": "#f43f5e",
+      "text_primary": "#f8fafc",
+      "text_secondary": "#94a3b8"
+    },
+    "usage_rules": [
+      "Never use pure black (#000000). Use #020617 (Slate 950).",
+      "Status indicators (Available/Occupied) must have a 'glow' effect (box-shadow).",
+      "Gradients are FORBIDDEN except for the 'Search Beam' effect."
+    ]
+  },
+  "layout": {
+    "spacing_system": {
+      "base": "4px",
+      "container_padding": "p-6 md:p-12",
+      "section_gap": "gap-8 md:gap-16"
+    },
+    "grid_strategy": "The Bento Grid (Mode A)",
+    "rules": [
+      "Mobile First: grid-cols-1 -> md:grid-cols-2 -> lg:grid-cols-3",
+      "Cards must have 'h-full' to stretch evenly.",
+      "Use 'masonry' style for the room result list if possible, or strict grid with varied spans."
+    ]
+  },
+  "components": {
+    "search_bar": {
+      "style": "The Omnibox",
+      "classes": "h-14 rounded-full bg-slate-900/50 border-slate-700 backdrop-blur-xl text-lg px-6 shadow-2xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300",
+      "icon": "Search icon must be absolute right-4 text-slate-400"
+    },
+    "room_card": {
+      "style": "The Data Plate",
+      "classes": "group relative overflow-hidden rounded-xl border border-slate-800 bg-slate-900/50 p-6 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-[0_0_30px_-10px_rgba(99,102,241,0.3)]",
+      "features": [
+        "Status dot (Green/Red) with animate-pulse",
+        "Room Number in JetBrains Mono (Large)",
+        "Capacity badge in top right"
+      ]
+    },
+    "buttons": {
+      "primary": "bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-medium px-6 py-3 shadow-lg shadow-indigo-500/20 transition-all active:scale-95",
+      "secondary": "bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg px-6 py-3 border border-slate-700"
+    },
+    "badges": {
+      "style": "rounded-md px-2 py-1 text-xs font-mono uppercase tracking-wider border",
+      "variants": {
+        "default": "bg-slate-800 border-slate-700 text-slate-400",
+        "success": "bg-emerald-950/30 border-emerald-900 text-emerald-400",
+        "warning": "bg-amber-950/30 border-amber-900 text-amber-400"
+      }
+    }
+  },
+  "visual_assets": {
+    "images": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1762279388956-1c098163a2a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRpZ2l0YWwlMjBkYXRhJTIwZmxvdyUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc2NjYwNjY1MXww&ixlib=rb-4.1.0&q=85",
+        "usage": "Main dashboard background with heavy overlay (bg-slate-950/90)",
+        "alt": "Abstract digital data flow"
+      },
+      "room_placeholders": [
+        "https://images.unsplash.com/photo-1701407797736-957936209aa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB1bml2ZXJzaXR5JTIwbGVjdHVyZSUyMGhhbGwlMjBkYXJrJTIwbW9vZHl8ZW58MHx8fHwxNzY2NjA2NjQ4fDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1690079374922-7f50d5c1a102?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB1bml2ZXJzaXR5JTIwbGVjdHVyZSUyMGhhbGwlMjBkYXJrJTIwbW9vZHl8ZW58MHx8fHwxNzY2NjA2NjQ4fDA&ixlib=rb-4.1.0&q=85"
+      ],
+      "auth_background": {
+        "url": "https://images.unsplash.com/photo-1666353888701-e8ec970d19e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwc3R1ZGVudHMlMjBzdHVkeWluZyUyMGxpYnJhcnklMjBkYXJrJTIwYWVzdGhldGljfGVufDB8fHx8MTc2NjYwNjY0OXww&ixlib=rb-4.1.0&q=85",
+        "usage": "Split screen layout for Login/Register pages"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred_icons": ["Search", "MapPin", "Users", "Clock", "Zap", "Monitor", "Mic", "LayoutGrid", "List"]
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "defaults": {
+      "duration": 0.3,
+      "ease": "easeOut"
+    },
+    "interactions": [
+      "Hover: scale-105 for cards",
+      "Tap: scale-95 for buttons",
+      "Page Load: Staggered fade-in for grid items"
+    ]
+  },
+  "accessibility": {
+    "rules": [
+      "All interactive elements must have aria-label if no text is present.",
+      "Focus rings must be visible (ring-2 ring-indigo-500).",
+      "Contrast ratio for text must be > 4.5:1 (Use Slate-200 or lighter on Slate-900)."
+    ]
+  },
+  "universal_guidelines": {
+    "do_not": [
+      "Do not use gradients for text.",
+      "Do not use 'Inter' font.",
+      "Do not center text in cards (Left align for readability).",
+      "Do not use default scrollbars (Hide them or style them thin)."
+    ],
+    "must_do": [
+      "Use 'data-testid' for all interactive elements.",
+      "Use 'sonner' for toasts.",
+      "Use 'lucide-react' for icons."
+    ]
+  },
+  "instructions_to_main_agent": "You are building the frontend. Use the provided JSON to guide every styling decision. When creating the 'Room Card', refer to the 'components.room_card' section. When setting up the layout, refer to 'layout.grid_strategy'. Do not deviate from the 'Cyber-Academic' theme. Use the provided image URLs for backgrounds and placeholders."
+}
