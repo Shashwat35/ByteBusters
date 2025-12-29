@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Empty Classroom Finder
 
 A mobile-first web app for IIPS DAVV, Indore, to locate free classrooms. Users can filter by floor, capacity, and facilities, select custom time ranges, view rooms on maps, get AI predictions, and receive notifications for favorites.
